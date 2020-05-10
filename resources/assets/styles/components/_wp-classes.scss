@@ -12,10 +12,7 @@
 }
 
 .aligncenter {
-  @apply my-2 mx-auto;
-
-  display: block;
-  height: auto;
+  @apply block my-2 mx-auto h-auto;
 }
 
 .alignleft,

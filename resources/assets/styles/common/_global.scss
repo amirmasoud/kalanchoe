@@ -12,11 +12,9 @@ p {
 }
 
 a {
-  @apply text-primary no-underline border-b border-transparent;
-
-  transition: 0.2s ease;
+  @apply text-indigo-500 no-underline border-b border-transparent transition duration-200 ease-in-out;
 
   &:hover {
-    @apply border-primary;
+    @apply border-indigo-900;
   }
 }
