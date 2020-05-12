@@ -17,7 +17,6 @@ class App extends Controller
             if ($home = get_option('page_for_posts', true)) {
                 return get_the_title($home);
             }
-            return __('Latest Posts', 'sage');
         }
         if (is_archive()) {
             return get_the_archive_title();
