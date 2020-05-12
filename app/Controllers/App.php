@@ -27,6 +27,6 @@ class App extends Controller
         if (is_404()) {
             return __('Not Found', 'sage');
         }
-        return get_the_title();
+        // return get_the_title();
     }
 }

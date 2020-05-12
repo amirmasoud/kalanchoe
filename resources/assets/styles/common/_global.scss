@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather");
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  @apply mb-2 leading-tight;
+  @apply font-serif leading-tight;
 }
 
 p {
@@ -12,7 +14,7 @@ p {
 }
 
 a {
-  @apply text-indigo-500 no-underline border-b border-transparent transition duration-200 ease-in-out;
+  @apply text-indigo-500 no-underline;
 
   &:hover {
     @apply border-indigo-900;
