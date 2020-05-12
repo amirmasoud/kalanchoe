@@ -4,8 +4,9 @@
       <span class="">
         @include('partials/sticky-pin')
       </span>
-      {!! FrontPage::thumbnail() !!}
-      {!! Category::first() !!}
+      {!! $thumbnail !!}
+      {!! $first_category !!}
+      @include('partials/category-first')
       @include('partials/entry-time')
       <h2 class="mt-4 mb-2 entry-title text-3xl"><a class="text-black hover:text-indigo-500" href="{{ get_permalink() }}">{!! get_the_title() !!}</a></h2>
     </header>

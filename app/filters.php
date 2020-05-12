@@ -89,3 +89,9 @@ add_filter('comments_template', function ($comments_template) {
 
     return $comments_template;
 }, 100);
+
+// add_filter('get_search_form', function () {
+//     $form = '';
+//     echo template(realpath(config('dir.template') . '/templates/partials/searchform.blade.php'), []);
+//     return $form;
+// });
