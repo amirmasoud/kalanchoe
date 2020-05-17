@@ -2,10 +2,22 @@
   @apply list-none flex flex-wrap;
 }
 
-.banner .nav a {
-  @apply inline-block px-4 py-2 border-none;
+#menu-primary {
+  @apply flex justify-center;
 
-  &:hover {
-    color: darken(#525ddc, 30%);
+  a {
+    @apply text-gray-800 font-light px-3 py-1 mx-1 rounded-full;
+
+    &:hover {
+      @apply bg-gray-300;
+    }
+  }
+
+  li.current_page_item a {
+    @apply bg-indigo-500 text-indigo-100 font-light;
+
+    &:hover {
+      @apply bg-indigo-500;
+    }
   }
 }
