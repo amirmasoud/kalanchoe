@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers\Partials;
+namespace App\Controllers;
 
 use Sober\Controller\Controller;
 

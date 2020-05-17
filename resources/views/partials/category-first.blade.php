@@ -1,8 +1,8 @@
-@foreach(Helpers\Category::first() as $category)
+@unless (empty($category = Category::first()))
     <a
-        class="badge badge-indigo"
+        class="badge badge-indigo mr-2"
         href="{{ $category['link'] }}"
     >
         {{ $category['name'] }}
     </a>
-@endif
+@endunless

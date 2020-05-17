@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers\Partials;
+namespace App\Controllers;
 
 use Sober\Controller\Controller;
 
@@ -18,7 +18,7 @@ class Category extends Controller
         if (!empty($categories)) {
             return array(
                 'link' => esc_url(get_category_link($categories[0]->term_id)),
-                'text' => esc_html($categories[0]->name)
+                'name' => esc_html($categories[0]->name)
             );
         } else {
             return array();
