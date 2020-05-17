@@ -68,4 +68,7 @@
   <rule ref="PSR2.Files.ClosingTag.NotAllowed">
     <exclude-pattern>resources/views</exclude-pattern>
   </rule>
+
+  <!-- <rule ref="WordPress-Docs" />
+  <rule ref="WordPress-Core" /> -->
 </ruleset>

@@ -2,6 +2,14 @@
   @apply list-none flex flex-wrap;
 }
 
+#menu-social {
+  display: flex;
+
+  .social_navigation-icon {
+    @apply w-6;
+  }
+}
+
 #menu-primary {
   @apply flex justify-center;
 

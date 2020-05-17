@@ -1,5 +1,5 @@
 <article @php post_class('flex content-between flex-wrap p-4 mb-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4') @endphp>
-  <div>
+  <div class="w-full">
     <header>
       <span class="">
         @include('partials/sticky-pin')
@@ -13,7 +13,7 @@
       @php the_excerpt() @endphp
     </div>
   </div>
-  <div class="mt-4">
+  <div class="w-full mt-4">
     @include('partials/entry-author')
   </div>
 </article>

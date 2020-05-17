@@ -1,15 +1,30 @@
 {
   "folders": [
     {
-      "path": "../../../.."
+      "path": "."
     }
   ],
   "settings": {
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
+    "editor.tabSize": 4,
     "editor.renderLineHighlight": "none",
     "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Monokai"
+    "workbench.colorTheme": "Monokai",
+    "phpcs.standard": "WordPress",
+    "phpcbf.standard": "WordPress-Core",
+    "phpcbf.executablePath": "phpcbf",
+    "[php]": {
+      "editor.detectIndentation": true,
+      "editor.useTabStops": true,
+      "editor.formatOnSave": true,
+      "editor.insertSpaces": true
+    },
+    "[javascript]": {
+      "editor.insertSpaces": true,
+      "editor.detectIndentation": false,
+      "editor.useTabStops": false
+    }
   }
 }
