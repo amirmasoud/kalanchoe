@@ -3,10 +3,14 @@
 }
 
 #menu-social {
-  display: flex;
+  @apply flex mr-4;
 
   .social_navigation-icon {
     @apply w-6;
+  }
+
+  .menu-item {
+    @apply float-right ml-2;
   }
 }
 

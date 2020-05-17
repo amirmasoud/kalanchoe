@@ -3,7 +3,7 @@
     "main": ["./scripts/main.js", "./styles/main.scss"],
     "customizer": ["./scripts/customizer.js"]
   },
-  "publicPath": ".",
+  "publicPath": "/wp-content/themes/kalanchoe",
   "devUrl": "http://localhost",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",

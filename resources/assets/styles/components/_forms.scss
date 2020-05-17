@@ -4,7 +4,7 @@
 }
 
 .search-form label {
-  @apply mb-4 font-normal;
+  @apply font-normal;
 }
 
 .search-form .search-field {
@@ -12,9 +12,5 @@
 }
 
 .search-form .search-submit {
-  @apply inline-block align-middle text-center select-none border font-normal whitespace-no-wrap py-2 px-4 rounded text-base leading-normal no-underline text-gray-100 bg-gray-400;
-
-  &:hover {
-    @apply bg-gray-300;
-  }
+  @apply hidden;
 }
