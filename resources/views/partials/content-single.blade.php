@@ -1,13 +1,13 @@
-<article @php post_class() @endphp>
-  <header class="flex justify-between mb-20">
-    <div class="max-w-(full-64)">
+<article @php post_class('mx-4') @endphp>
+  <header class="flex flex-wrap flex-col-reverse md:flex-row justify-between mb-20">
+    <div class="w-full md:w-1/2">
       <div class="w-full mb-4">@include('partials/category-all')</div>
-      <h1 class="entry-title text-5xl">{!! get_the_title() !!}</h1>
-      <div class="entry-excerpt mt-12 text-lg">
+      <h1 class="entry-title text-5xl md:mr-12">{!! get_the_title() !!}</h1>
+      <div class="entry-excerpt mt-12 md:mr-12 text-lg">
         @php the_excerpt() @endphp
       </div>
     </div>
-    {!! Post::thumbnail('64', 'full') !!}
+    {!! Post::thumbnail('w-full md:w-1/2 h-full') !!}
   </header>
   <div class="entry-content text-lg">
     @php the_content() @endphp

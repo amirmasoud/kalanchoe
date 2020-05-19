@@ -14,10 +14,9 @@ class Post extends Controller
      * @param string $extra
      * @return void
      */
-    public static function thumbnail($width = 'full', $height = 40, $extra = '')
+    public static function thumbnail($extra = '')
     {
-        $class = 'mb-4 object-cover rounded shadow-md';
-        $class .= " w-$width h-$height $extra";
+        $class = "mb-4 object-cover rounded shadow-md $extra";
         return the_post_thumbnail('post-thumbnail', ['class' => $class]);
     }
 }

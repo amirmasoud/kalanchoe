@@ -5,13 +5,13 @@
         @include('partials/sticky-pin')
       </span>
       <a href="{{ get_permalink() }}">
-        {!! Post::thumbnail('full', 40, 'hover:shadow-lg') !!}
+        {!! Post::thumbnail('w-full h-40 hover:shadow-lg') !!}
       </a>
       @include('partials/category-first')
       @include('partials/entry-time')
-      <h2 class="mt-4 mb-2 entry-title text-3xl"><a class="text-black hover:text-indigo-500" href="{{ get_permalink() }}">{!! get_the_title() !!}</a></h2>
+      <h2 class="mt-4 mb-2 entry-title text-3xl break-words"><a class="text-black hover:text-indigo-500" href="{{ get_permalink() }}">{!! get_the_title() !!}</a></h2>
     </header>
-    <div class="entry-summary">
+    <div class="entry-summary break-words">
       @php the_excerpt() @endphp
     </div>
   </div>

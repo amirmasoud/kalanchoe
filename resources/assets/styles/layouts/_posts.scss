@@ -5,7 +5,3 @@
 .entry-excerpt p {
   @apply max-w-3xl leading-8 mb-4;
 }
-
-.max-w-\(full-64\) {
-  width: calc(100vw - 64rem);
-}
