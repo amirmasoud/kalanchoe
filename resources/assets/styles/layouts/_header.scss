@@ -1,5 +1,17 @@
 .banner .nav {
-  @apply list-none flex flex-wrap;
+  @apply list-none flex;
+
+  @screen md {
+    @apply flex-wrap;
+  }
+}
+
+.menu-primary-container {
+  @apply px-8 py-4 overflow-x-scroll;
+
+  @screen md {
+    @apply overflow-hidden;
+  }
 }
 
 #menu-social {
@@ -15,7 +27,11 @@
 }
 
 #menu-primary {
-  @apply flex justify-center;
+  @apply flex justify-center px-40 py-4;
+
+  @screen md {
+    @apply p-0;
+  }
 
   a {
     @apply text-gray-800 font-light px-3 py-1 mx-1 rounded-full;
