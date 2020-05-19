@@ -6,8 +6,18 @@ use Sober\Controller\Controller;
 
 class Post extends Controller
 {
-    public static function thumbnail()
+    /**
+     * Get post thumbnail.
+     *
+     * @param string|integer $width
+     * @param string|integer $height
+     * @param string $extra
+     * @return void
+     */
+    public static function thumbnail($width = 'full', $height = 40, $extra = '')
     {
-        return the_post_thumbnail('post-thumbnail', ['class' => 'mb-4 object-cover h-40 w-full rounded shadow-md hover:shadow-lg']);
+        $class = 'mb-4 object-cover rounded shadow-md';
+        $class .= " w-$width h-$height $extra";
+        return the_post_thumbnail('post-thumbnail', ['class' => $class]);
     }
 }

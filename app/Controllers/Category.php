@@ -24,4 +24,26 @@ class Category extends Controller
             return array();
         }
     }
+
+    /**
+     * Return all categories.
+     *
+     * @return array
+     */
+    public static function all()
+    {
+        $categories = get_the_category();
+        if (!empty($categories)) {
+            $formatted_categories = array();
+            foreach ($categories as $category) {
+                $formatted_categories[] = array(
+                    'link' => esc_url(get_category_link($category->term_id)),
+                    'name' => esc_html($category->name)
+                );
+            }
+            return $formatted_categories;
+        } else {
+            return array();
+        }
+    }
 }
