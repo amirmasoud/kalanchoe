@@ -4,11 +4,11 @@ if (post_password_required()) {
 }
 @endphp
 
-<section id="comments" class="comments">
+<section id="comments" class="comments flex flex-wrap max-w-3xl mx-auto mt-20">
   @if (have_comments())
-    <h2>
-      {!! sprintf(_nx('One response to &ldquo;%2$s&rdquo;', '%1$s responses to &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'sage'), number_format_i18n(get_comments_number()), '<span>' . get_the_title() . '</span>') !!}
-    </h2>
+    <p class="block w-full text-right text-gray-500 uppercase text-sm -mb-3">
+      {!! sprintf(_nx('One response', '%1$s responses', get_comments_number(), 'comments title', 'sage'), number_format_i18n(get_comments_number())) !!}
+    </p>
 
     <ol class="comment-list">
       {!! wp_list_comments(['style' => 'ol', 'short_ping' => true]) !!}
