@@ -117,8 +117,26 @@ add_action(
         );
         register_sidebar(
             array(
-                'name' => __('Footer', 'sage'),
-                'id'   => 'sidebar-footer',
+                'name' => __('Footer #1', 'sage'),
+                'id'   => 'sidebar-footer-1',
+            ) + $config
+        );
+        register_sidebar(
+            array(
+                'name' => __('Footer #2', 'sage'),
+                'id'   => 'sidebar-footer-2',
+            ) + $config
+        );
+        register_sidebar(
+            array(
+                'name' => __('Footer #3', 'sage'),
+                'id'   => 'sidebar-footer-3',
+            ) + $config
+        );
+        register_sidebar(
+            array(
+                'name' => __('Footer #4', 'sage'),
+                'id'   => 'sidebar-footer-4',
             ) + $config
         );
     }
