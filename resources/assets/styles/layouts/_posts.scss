@@ -1,28 +1,103 @@
 .entry-content {
-  p,
-  figure {
-    @apply max-w-3xl mx-auto px-4 leading-8 mb-4;
+  & > * {
+    @apply px-4 leading-8 mb-4;
+
+    flex-basis: 100%;
+    margin: 0 15rem;
   }
 
-  .wp-block-embed-youtube {
-    & > div {
-      @apply relative w-full h-0;
+  .alignleft,
+  .alignright {
+    flex-basis: 50%;
+    margin: 0;
 
-      padding-bottom: 50%;
-
-      & > iframe {
-        @apply absolute top-0 left-0 w-full h-full;
-      }
+    & + * {
+      flex-basis: 50%;
+      margin: 0;
     }
   }
 
-  figure.alignwide {
-    @apply max-w-full;
-  }
+  // .alignleft,
+  // .alignright {
+  //   @apply w-1/2 max-w-sm;
 
-  figure.alignfull {
-    @apply max-w-full px-0;
-  }
+  //   & + * {
+  //     @apply w-1/2 max-w-sm;
+  //   }
+  // }
+  // p,
+  // figure {
+  //   @apply max-w-3xl mx-auto px-4 leading-8 mb-4;
+  // }
+
+  // figure.alignright,
+  // figure.alignleft {
+  //   @apply px-4 mx-auto;
+
+  //   @screen sm {
+  //     max-width: 320px;
+  //   }
+
+  //   @screen md {
+  //     max-width: 384px;
+  //   }
+
+  //   @screen lg {
+  //     max-width: 512px;
+  //   }
+
+  //   @screen lg {
+  //     max-width: 640px;
+  //   }
+  // }
+
+  // figure.alignwide {
+  //   @apply w-full;
+
+  //   @screen sm {
+  //     max-width: 640px;
+  //   }
+
+  //   @screen md {
+  //     max-width: 768px;
+  //   }
+
+  //   @screen lg {
+  //     max-width: 1024px;
+  //   }
+
+  //   @screen lg {
+  //     max-width: 1280px;
+  //   }
+
+  //   &.wp-block-embed-youtube {
+  //     & > div {
+  //       @apply relative w-full h-0;
+
+  //       padding-bottom: 50%;
+
+  //       & > iframe {
+  //         @apply absolute top-0 left-0 w-full h-full;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // figure.alignfull {
+  //   @apply max-w-full px-0;
+
+  //   &.wp-block-embed-youtube {
+  //     & > div {
+  //       @apply relative w-full h-0;
+
+  //       padding-bottom: 50%;
+
+  //       & > iframe {
+  //         @apply absolute top-0 left-0 w-full h-full;
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 .entry-excerpt p {
