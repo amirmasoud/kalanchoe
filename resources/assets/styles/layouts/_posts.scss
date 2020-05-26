@@ -1,23 +1,27 @@
 .entry-content {
-  p {
-    @apply max-w-3xl mx-auto leading-8 mb-4;
+  p,
+  figure {
+    @apply max-w-3xl mx-auto px-4 leading-8 mb-4;
+  }
+
+  .wp-block-embed-youtube {
+    & > div {
+      @apply relative w-full h-0;
+
+      padding-bottom: 50%;
+
+      & > iframe {
+        @apply absolute top-0 left-0 w-full h-full;
+      }
+    }
   }
 
   figure.alignwide {
-    &.wp-block-embed-youtube {
-      & > div {
-        @apply relative w-full h-0;
+    @apply max-w-full;
+  }
 
-        padding-bottom: 50%;
-
-        & > iframe {
-          @apply absolute top-0 left-0 w-full h-full;
-        }
-      }
-    }
-    // iframe {
-    //   @apply w-full h-screen;
-    // }
+  figure.alignfull {
+    @apply max-w-full px-0;
   }
 }
 
