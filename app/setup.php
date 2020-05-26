@@ -55,6 +55,13 @@ add_action(
         add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
 
         /**
+         * Enable wide alignment.
+         *
+         * @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/#wide-alignment
+         */
+        add_theme_support('align-wide');
+
+        /**
          * Register navigation menus
          *
          * @link https://developer.wordpress.org/reference/functions/register_nav_menus/

@@ -1,5 +1,24 @@
-.entry-content p {
-  @apply max-w-3xl mx-auto leading-8 mb-4;
+.entry-content {
+  p {
+    @apply max-w-3xl mx-auto leading-8 mb-4;
+  }
+
+  figure.alignwide {
+    &.wp-block-embed-youtube {
+      & > div {
+        @apply relative w-full h-0;
+
+        padding-bottom: 50%;
+
+        & > iframe {
+          @apply absolute top-0 left-0 w-full h-full;
+        }
+      }
+    }
+    // iframe {
+    //   @apply w-full h-screen;
+    // }
+  }
 }
 
 .entry-excerpt p {
