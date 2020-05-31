@@ -1,4 +1,16 @@
 .entry-content {
+  .wp-block-embed-youtube {
+    & > div {
+      @apply relative w-full h-0;
+
+      padding-bottom: 50%;
+
+      & > iframe {
+        @apply absolute top-0 left-0 w-full h-full;
+      }
+    }
+  }
+
   & > * {
     @apply px-4 leading-8 mb-4;
 
