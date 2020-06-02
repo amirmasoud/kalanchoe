@@ -85,8 +85,23 @@
   @apply block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-700 border border-gray-400 rounded;
 
   &:focus {
-    @apply shadow-outline;
+    @apply outline-none border-indigo-400;
   }
+}
+
+.comment-form label[for="comment"],
+.comment-form label[for="author"],
+.comment-form label[for="email"],
+.comment-form label[for="url"] {
+  @apply text-gray-600 uppercase text-xs font-bold;
+
+  span.required {
+    @apply text-red-400;
+  }
+}
+
+.comment-form label[for="wp-comment-cookies-consent"] {
+  @apply text-gray-600;
 }
 
 .comment-form input[type="submit"] {
