@@ -3,8 +3,8 @@
   <header class="flex flex-wrap container px-4 mx-auto flex-col-reverse md:flex-row justify-between mb-20">
     <div class="w-full md:w-1/2">
       <div class="w-full mb-4">@include('partials/category-all')</div>
-      <h1 class="entry-title text-5xl md:mr-12">{!! get_the_title() !!}</h1>
-      <div class="entry-excerpt mt-12 md:mr-12 text-lg">
+      <h1 class="entry-title text-5xl md:mr-12 break-words">{!! get_the_title() !!}</h1>
+      <div class="entry-excerpt mt-12 md:mr-12 text-lg break-words">
         @php the_excerpt() @endphp
       </div>
     </div>
@@ -14,8 +14,8 @@
   <header class="flex flex-wrap container px-4 mx-auto justify-between mb-20">
     <div class="w-full">
       <div class="w-full mb-4">@include('partials/category-all')</div>
-      <h1 class="entry-title text-5xl md:mr-12">{!! get_the_title() !!}</h1>
-      <div class="entry-excerpt mt-12 md:mr-12 text-lg">
+      <h1 class="entry-title text-5xl md:mr-12 break-words">{!! get_the_title() !!}</h1>
+      <div class="entry-excerpt mt-12 text-lg break-words">
         @php the_excerpt() @endphp
       </div>
     </div>

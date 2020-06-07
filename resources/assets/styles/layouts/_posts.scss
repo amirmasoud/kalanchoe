@@ -1,3 +1,7 @@
+.entry-excerpt * {
+  @apply max-w-3xl leading-8 mb-4 mx-auto;
+}
+
 .entry-content {
   .wp-block-embed-youtube {
     & > div {
@@ -12,7 +16,7 @@
   }
 
   & > * {
-    @apply px-4 leading-8 pb-4;
+    @apply px-4 leading-8 pb-4 break-all;
 
     flex-basis: 100%;
     margin: 0 15rem;
@@ -122,8 +126,4 @@
   //     }
   //   }
   // }
-}
-
-.entry-excerpt p {
-  @apply max-w-3xl leading-8 mb-4;
 }

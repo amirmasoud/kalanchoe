@@ -1,4 +1,8 @@
 .comment-list {
+  & > * {
+    @apply break-all;
+  }
+
   @apply list-none w-full;
 
   ol {
