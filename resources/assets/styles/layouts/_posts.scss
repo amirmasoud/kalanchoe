@@ -15,6 +15,14 @@
     }
   }
 
+  figure.gallery-item {
+    @apply flex flex-col items-center mb-2;
+
+    figcaption.gallery-caption {
+      @apply p-2;
+    }
+  }
+
   .gallery-columns-1 {
     @apply flex flex-wrap;
 
