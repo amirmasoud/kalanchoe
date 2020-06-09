@@ -104,8 +104,9 @@
   }
 
   & > * {
-    @apply px-4 leading-8 pb-4 break-all;
+    @apply px-4 leading-8 pb-4 break-words;
 
+    word-break: break-word;
     flex-basis: 100%;
     margin: 0 15rem;
   }
