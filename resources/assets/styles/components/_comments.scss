@@ -21,6 +21,10 @@
     @apply ml-4;
   }
 
+  li.pingback:nth-last-child(2) {
+    @apply mb-8 #{!important};
+  }
+
   .comment-body {
     @apply bg-gray-100 rounded border border-gray-200 p-4;
 
