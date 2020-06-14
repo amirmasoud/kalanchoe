@@ -13,12 +13,24 @@
     }
   }
 
-  li.depth-1 {
+  li {
     @apply mt-4;
   }
 
   li.depth-2 {
     @apply ml-4;
+  }
+
+  li.depth-3 {
+    @apply ml-8;
+  }
+
+  li.depth-4 {
+    @apply ml-12;
+  }
+
+  li.depth-5 {
+    @apply ml-16;
   }
 
   li.pingback:nth-last-child(2) {
@@ -29,7 +41,7 @@
     @apply bg-gray-100 rounded border border-gray-200 p-4;
 
     .comment-content {
-      @apply mt-2;
+      @apply my-2;
     }
   }
 
@@ -38,7 +50,7 @@
   }
 
   div.comment-metadata {
-    @apply w-full text-right self-center uppercase text-sm font-semibold;
+    @apply w-full text-right self-center uppercase text-sm font-light;
 
     time {
       @apply text-gray-500;
@@ -81,7 +93,15 @@
 }
 
 .comment-respond {
-  @apply w-full mt-8;
+  @apply flex flex-wrap w-auto my-8 mx-4;
+
+  .reply-title {
+    @apply w-full;
+  }
+
+  .comment-form {
+    @apply w-full;
+  }
 }
 
 .comment-form .comment-notes {
