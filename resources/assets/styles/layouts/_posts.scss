@@ -58,7 +58,11 @@
   }
 
   ul {
-    @apply list-disc list-inside px-8;
+    @apply list-disc list-inside pl-8;
+  }
+
+  ol {
+    @apply list-decimal list-inside pl-8;
   }
 
   code {
