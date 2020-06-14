@@ -47,6 +47,16 @@
     }
   }
 
+  dl {
+    dt {
+      @apply font-bold;
+    }
+
+    dd {
+      @apply italic ml-8;
+    }
+  }
+
   code {
     @apply font-mono bg-gray-200 rounded p-1;
   }
