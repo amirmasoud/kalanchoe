@@ -15,6 +15,10 @@
     }
   }
 
+  code {
+    @apply bg-gray-200 rounded p-1;
+  }
+
   figure.gallery-item {
     @apply flex flex-col items-center mb-2;
 
