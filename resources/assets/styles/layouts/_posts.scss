@@ -138,6 +138,14 @@
     padding-right: 0 !important;
   }
 
+  img.alignleft {
+    @apply mr-4 mb-4;
+  }
+
+  img.alignright {
+    @apply ml-4 mb-4;
+  }
+
   // .alignleft,
   // .alignright {
   //   @apply w-1/2 max-w-sm;
