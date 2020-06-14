@@ -25,12 +25,12 @@
     @php the_content() @endphp
   </div>
   <footer class="flex flex-wrap max-w-3xl mx-auto">
+    <div class="flex w-full">
+      {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
+    </div>
     <div class="flex w-full justify-between">
       <div class="w-full md:w-2/3">@include('partials/tag-all')</div>
       <div class="w-full md:w-1/3 text-right">@include('partials/entry-time')</div>
-    </div>
-    <div class="w-full">
-      {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
     </div>
   </footer>
   @php comments_template('/partials/comments.blade.php') @endphp
