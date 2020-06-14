@@ -70,6 +70,12 @@
   }
 }
 
+.comments {
+  .alert.alert-warning {
+    @apply w-full text-center text-gray-500 uppercase text-sm font-semibold bg-gray-100 rounded my-4 border border-orange-400 p-4;
+  }
+}
+
 .comment-respond {
   @apply w-full mt-8;
 }
