@@ -57,6 +57,10 @@
     }
   }
 
+  ul {
+    @apply list-disc list-inside px-8;
+  }
+
   code {
     @apply font-mono bg-gray-200 rounded p-1;
   }
