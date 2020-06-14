@@ -6,6 +6,8 @@ module.exports = {
       fontFamily: {
         sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
         serif: ["Merriweather", ...defaultTheme.fontFamily.serif],
+        mono: ["Fira Code", ...defaultTheme.fontFamily.mono],
+        handwriting: ["Dancing Script", "cursive"],
       },
       width: {
         "1/7": "14.28571429%",

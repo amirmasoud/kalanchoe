@@ -15,8 +15,40 @@
     }
   }
 
+  h1 {
+    @apply text-6xl mt-4 mb-8;
+  }
+
+  h2 {
+    @apply text-5xl mt-3 mb-6;
+  }
+
+  h3 {
+    @apply text-4xl mt-3 mb-5;
+  }
+
+  h4 {
+    @apply text-3xl mt-2 mb-4;
+  }
+
+  h5 {
+    @apply text-2xl mt-2 mb-3;
+  }
+
+  h6 {
+    @apply text-xl my-2;
+  }
+
+  blockquote {
+    @apply font-handwriting text-3xl px-8;
+
+    cite {
+      @apply block my-4 font-sans text-base italic font-light;
+    }
+  }
+
   code {
-    @apply bg-gray-200 rounded p-1;
+    @apply font-mono bg-gray-200 rounded p-1;
   }
 
   figure.gallery-item {
