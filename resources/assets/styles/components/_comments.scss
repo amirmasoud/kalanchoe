@@ -87,13 +87,15 @@
 }
 
 .comments {
+  @apply px-4;
+
   .alert.alert-warning {
     @apply w-full text-center text-gray-500 uppercase text-sm font-semibold bg-gray-100 rounded my-4 border border-orange-400 p-4;
   }
 }
 
 .comment-respond {
-  @apply flex flex-wrap w-auto my-8 mx-4;
+  @apply flex flex-wrap w-auto my-8;
 
   .reply-title {
     @apply w-full;

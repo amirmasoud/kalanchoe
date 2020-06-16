@@ -12,7 +12,7 @@
     </div>
   @endif
 
-  <div class="flex flex-wrap">
+  <div class="flex flex-wrap container mx-auto">
   @while (have_posts()) @php the_post() @endphp
     @include('partials.content-'.get_post_type())
   @endwhile
