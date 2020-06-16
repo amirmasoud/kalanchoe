@@ -17,26 +17,30 @@
 
   h1 {
     @apply text-6xl mt-4 mb-8;
+
+    line-height: 4rem;
   }
 
   h2 {
     @apply text-5xl mt-3 mb-6;
+
+    line-height: 3rem;
   }
 
   h3 {
-    @apply text-4xl mt-3 mb-5;
+    @apply text-4xl mt-3 mb-5 leading-10;
   }
 
   h4 {
-    @apply text-3xl mt-2 mb-4;
+    @apply text-3xl mt-2 mb-4 leading-8;
   }
 
   h5 {
-    @apply text-2xl mt-2 mb-3;
+    @apply text-2xl mt-2 mb-3 leading-6;
   }
 
   h6 {
-    @apply text-xl my-2;
+    @apply text-xl my-2 leading-4;
   }
 
   cite {
@@ -118,7 +122,11 @@
   }
 
   table {
-    @apply table-auto my-4 mx-64;
+    @apply table-auto my-4 mx-4;
+
+    @screen lg {
+      @apply mx-64;
+    }
 
     tr {
       &.odd {
@@ -126,11 +134,11 @@
       }
 
       th {
-        @apply px-4 py-2;
+        @apply px-4 py-2 whitespace-no-wrap;
       }
 
       td {
-        @apply border px-4 py-2;
+        @apply border px-4 py-2 whitespace-no-wrap;
       }
 
       td:first-child {
@@ -232,11 +240,14 @@
   }
 
   & > * {
-    @apply px-4 leading-8 pb-4 break-words;
+    @apply px-4 pb-4 mx-0 leading-8 break-words;
 
     word-break: break-word;
     flex-basis: 100%;
-    margin: 0 15rem;
+
+    @screen lg {
+      margin: 0 15rem;
+    }
   }
 
   .alignleft,
