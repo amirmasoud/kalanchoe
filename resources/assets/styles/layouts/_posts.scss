@@ -151,6 +151,10 @@
     }
   }
 
+  .attachment img {
+    @apply w-full;
+  }
+
   figure.gallery-item {
     @apply flex flex-col items-center mb-2;
 
