@@ -117,6 +117,32 @@
     @apply font-mono font-bold;
   }
 
+  table {
+    @apply table-auto my-4 mx-64;
+
+    tr {
+      &.odd {
+        @apply bg-gray-100;
+      }
+
+      th {
+        @apply px-4 py-2;
+      }
+
+      td {
+        @apply border px-4 py-2;
+      }
+
+      td:first-child {
+        @apply pl-4;
+      }
+
+      td:last-child {
+        @apply pr-4;
+      }
+    }
+  }
+
   figure.gallery-item {
     @apply flex flex-col items-center mb-2;
 
