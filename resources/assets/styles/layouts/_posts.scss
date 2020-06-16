@@ -39,11 +39,15 @@
     @apply text-xl my-2;
   }
 
+  cite {
+    @apply font-sans italic font-light;
+  }
+
   blockquote {
     @apply font-handwriting text-3xl px-8;
 
     cite {
-      @apply block my-4 font-sans text-base italic font-light;
+      @apply block my-4 text-base;
     }
   }
 
@@ -65,8 +69,52 @@
     @apply list-decimal list-inside pl-8;
   }
 
+  address {
+    @apply italic;
+  }
+
+  abbr,
+  acronym {
+    @apply no-underline border-b border-dashed border-indigo-400;
+  }
+
+  big {
+    font-size: larger;
+  }
+
   code {
     @apply font-mono bg-gray-200 rounded p-1;
+  }
+
+  pre {
+    @apply font-mono bg-gray-200 rounded-md p-4 overflow-y-scroll whitespace-pre;
+  }
+
+  del {
+    @apply no-underline bg-red-200 rounded p-1;
+  }
+
+  ins {
+    @apply no-underline bg-green-200 rounded p-1;
+  }
+
+  em {
+    @apply italic;
+  }
+
+  kbd {
+    @apply bg-gray-200 border border-gray-400 text-gray-800 inline-block text-sm font-bold leading-4 whitespace-no-wrap rounded p-1;
+
+    // prettier-ignore
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+  }
+
+  q {
+    @apply font-handwriting text-2xl;
+  }
+
+  var {
+    @apply font-mono font-bold;
   }
 
   figure.gallery-item {
