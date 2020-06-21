@@ -11,12 +11,11 @@ class Post extends Controller
      *
      * @param string|integer $width
      * @param string|integer $height
-     * @param string $extra
+     * @param string $class
      * @return void
      */
-    public static function thumbnail($extra = '')
+    public static function thumbnail($class)
     {
-        $class = "mb-4 object-cover rounded shadow-md $extra";
         return the_post_thumbnail('post-thumbnail', ['class' => $class]);
     }
 }

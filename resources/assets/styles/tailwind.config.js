@@ -19,4 +19,8 @@ module.exports = {
   },
   variants: {},
   plugins: [],
+  purge: {
+    enabled: process.env.NODE_ENV === "production",
+    content: ["./resources/views/**/*.blade.php", "../../../app/**/*.php"],
+  },
 };

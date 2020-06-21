@@ -12,8 +12,7 @@ class User extends Controller
             get_the_author_meta('ID'),
             '32',
             '',
-            get_author_posts_url('display_name') . ' avatar',
-            array('class' => array('rounded-full'))
+            get_author_posts_url('display_name') . ' avatar'
         );
     }
 }

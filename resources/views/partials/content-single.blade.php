@@ -8,7 +8,7 @@
         @php the_excerpt() @endphp
       </div>
     </div>
-    {!! Post::thumbnail('w-full md:w-1/2 h-full') !!}
+    {!! Post::thumbnail('single-thumbnail') !!}
   </header>
   @else
   <header class="flex flex-wrap container px-4 mx-auto justify-between mb-20">

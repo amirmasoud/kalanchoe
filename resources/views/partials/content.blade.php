@@ -5,7 +5,7 @@
         @include('partials/sticky-pin')
       </span>
       <a href="{{ get_permalink() }}">
-        {!! Post::thumbnail('w-full h-40 hover:shadow-lg') !!}
+        {!! Post::thumbnail('home-thumbnail') !!}
       </a>
       @include('partials/category-first')
       @include('partials/entry-time')

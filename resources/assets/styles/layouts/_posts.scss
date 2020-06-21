@@ -1,3 +1,29 @@
+.avatar {
+  @apply rounded-full;
+}
+
+.has-post-thumbnail {
+  img.wp-post-image {
+    @apply w-full mb-4 object-cover rounded shadow-md;
+
+    &.home-thumbnail {
+      @apply h-40;
+
+      &:hover {
+        @apply shadow-lg;
+      }
+    }
+
+    &.single-thumbnail {
+      @apply h-full;
+
+      @screen md {
+        @apply w-1/2;
+      }
+    }
+  }
+}
+
 .entry-excerpt * {
   @apply max-w-3xl leading-8 mb-4 mx-auto;
 }
