@@ -21,6 +21,6 @@ module.exports = {
   plugins: [],
   purge: {
     enabled: process.env.NODE_ENV === "production",
-    content: ["./resources/views/**/*.blade.php", "../../../app/**/*.php"],
+    content: ["./views/**/*.blade.php"],
   },
 };
