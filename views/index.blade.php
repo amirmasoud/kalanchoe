@@ -15,10 +15,12 @@
   </div>
 
   <div class="flex flex-wrap container mx-auto">
-  @while (have_posts()) @php the_post() @endphp
-    @include('partials.content-'.get_post_type())
-  @endwhile
+    @while (have_posts()) @php the_post() @endphp
+      @include('partials.content-'.get_post_type())
+    @endwhile
 
-  {!! get_the_posts_navigation() !!}
+    <div class="w-full">
+      {!! get_the_posts_navigation() !!}
+    </div>
   </div>
 @endsection
