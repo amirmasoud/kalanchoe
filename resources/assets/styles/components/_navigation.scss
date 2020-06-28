@@ -1,0 +1,9 @@
+.navigation {
+  .nav-links {
+    @apply flex flex-wrap my-4 w-full justify-between;
+
+    a {
+      @apply p-4;
+    }
+  }
+}
