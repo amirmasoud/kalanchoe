@@ -4,7 +4,7 @@
       <p class="mb-1">&copy; {{ date('Y') }} All Rights Reserved.</p>
       <p class="mb-1">Proudly powered by <a class="text-gray-600" href="https://wordpress.org/">WordPress</a></p>
       <p class="mb-1">Developed by <a class="text-gray-600" href="https://amirmasoud.me/">Amirmasoud</a></p>
-      <p class="mb-1">version <a class="text-gray-600" href="http://github.com/amirmasoud/kalanchoe">1.0.0.beta.4</a></p>
+      <p class="mb-1">version <a class="text-gray-600" href="http://github.com/amirmasoud/kalanchoe">1.0.0.beta.5</a></p>
     </div>
     <div class="w-full sm:w-1/2 md:w-1/4 xl:w-1/5 mt-4">@php dynamic_sidebar('sidebar-footer-1') @endphp</div>
     <div class="w-full sm:w-1/2 md:w-1/4 xl:w-1/5 mt-4">@php dynamic_sidebar('sidebar-footer-2') @endphp</div>
