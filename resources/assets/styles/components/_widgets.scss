@@ -6,6 +6,11 @@ footer.content-info {
       @apply text-3xl font-serif mb-2;
     }
 
+    // Archive/dropdown
+    select {
+      @apply w-(full-4) outline-none px-2 py-1 bg-gray-800 rounded border-none transition-all duration-100 ease-linear;
+    }
+
     // Search form
     form.search-form {
       .search-field {
