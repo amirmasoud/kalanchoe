@@ -6,6 +6,40 @@ footer.content-info {
       @apply text-3xl font-serif mb-2;
     }
 
+    // Audio
+    .wp-audio-shortcode {
+      &.mejs-container {
+        @apply max-w-3xl mx-auto my-4 rounded #{!important};
+
+        .mejs-controls {
+          @apply rounded;
+        }
+      }
+
+      &.mejs-container,
+      &.mejs-container .mejs-controls,
+      .mejs-embed,
+      .mejs-embed body {
+        @apply bg-gray-800 #{!important};
+      }
+
+      // prettier-ignore
+      .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total,
+      .mejs-controls .mejs-time-rail span {
+        @apply rounded-full #{!important};
+      }
+
+      // prettier-ignore
+      .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,
+      .mejs-controls .mejs-time-rail .mejs-time-loaded {
+        @apply bg-gray-500 rounded-full #{!important};
+      }
+
+      .mejs-controls .mejs-time-rail .mejs-time-current {
+        @apply bg-gray-700 rounded-full #{!important};
+      }
+    }
+
     // Archive/dropdown
     select {
       @apply w-(full-4) outline-none px-2 py-1 bg-gray-800 rounded border-none transition-all duration-100 ease-linear;
