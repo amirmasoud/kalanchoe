@@ -24,9 +24,9 @@ a {
 input[type="text"],
 input[type="search"],
 input[type="password"] {
-  @apply border border-gray-400 rounded px-2;
+  @apply border outline-none border-gray-400 rounded px-2;
 }
 
 input[type="submit"] {
-  @apply bg-indigo-400 rounded px-2 text-sm py-1 text-indigo-100 cursor-pointer;
+  @apply bg-indigo-400 outline-none rounded px-2 text-sm py-1 text-indigo-100 cursor-pointer;
 }

@@ -1,5 +1,11 @@
 footer.content-info {
   .widget {
+    @apply mb-12;
+
+    & > h3 {
+      @apply text-3xl font-serif mb-2;
+    }
+
     // Search form
     form.search-form {
       .search-field {
