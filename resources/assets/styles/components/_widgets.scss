@@ -1,0 +1,18 @@
+footer.content-info {
+  .widget {
+    // Search form
+    form.search-form {
+      .search-field {
+        @apply flex flex-wrap w-full bg-gray-800 rounded border-none transition-all duration-100 ease-linear;
+
+        &:hover {
+          @apply bg-gray-700 transition-all duration-100 ease-linear;
+        }
+
+        &:focus {
+          @apply bg-gray-600 text-gray-100 outline-none transition-all duration-100 ease-linear;
+        }
+      }
+    }
+  }
+}
