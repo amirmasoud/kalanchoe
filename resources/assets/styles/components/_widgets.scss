@@ -1,6 +1,6 @@
 footer.content-info {
   .widget {
-    @apply mb-12;
+    @apply mb-12 px-4;
 
     & > h3 {
       @apply text-3xl font-serif mb-2;
@@ -14,7 +14,7 @@ footer.content-info {
     // Gallary
     &.widget_media_gallery {
       & > * {
-        @apply px-4 pb-4 mx-0 leading-8 break-words;
+        @apply pb-4 mx-0 leading-8 break-words;
 
         word-break: break-word;
         flex-basis: 100%;
