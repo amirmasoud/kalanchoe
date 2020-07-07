@@ -6,6 +6,13 @@ footer.content-info {
       @apply text-3xl font-serif mb-2;
     }
 
+    // Navigation
+    &.widget_nav_menu {
+      ul.sub-menu {
+        @apply ml-4;
+      }
+    }
+
     // Image
     &.widget_media_image img {
       @apply w-full;
