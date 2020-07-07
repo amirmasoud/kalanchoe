@@ -6,6 +6,12 @@ footer.content-info {
       @apply text-3xl font-serif mb-2;
     }
 
+    // Categories
+    ul.children {
+      @apply ml-4;
+    }
+
+    // Calendar
     .wp-calendar-table {
       @apply w-full text-center;
     }
@@ -46,7 +52,7 @@ footer.content-info {
 
     // Archive/dropdown
     select {
-      @apply w-(full-4) outline-none px-2 py-1 bg-gray-800 rounded border-none transition-all duration-100 ease-linear;
+      @apply w-full outline-none px-2 py-1 bg-gray-800 rounded border-none transition-all duration-100 ease-linear;
     }
 
     // Search form
