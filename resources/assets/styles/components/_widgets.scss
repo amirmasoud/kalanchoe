@@ -6,6 +6,17 @@ footer.content-info {
       @apply text-3xl font-serif mb-2;
     }
 
+    // RSS
+    &.widget_rss {
+      .rss-date {
+        @apply block mb-4 text-sm uppercase;
+      }
+
+      .rssSummary {
+        @apply mb-8;
+      }
+    }
+
     // Navigation
     &.widget_nav_menu {
       ul.sub-menu {
@@ -129,6 +140,10 @@ footer.content-info {
     }
 
     // Audio
+    &.widget_media_audio {
+      @apply overflow-scroll;
+    }
+
     .wp-audio-shortcode {
       &.mejs-container {
         @apply max-w-3xl mx-auto my-4 rounded #{!important};
