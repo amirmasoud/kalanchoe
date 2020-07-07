@@ -6,6 +6,11 @@ footer.content-info {
       @apply text-3xl font-serif mb-2;
     }
 
+    // Image
+    &.widget_media_image img {
+      @apply w-full;
+    }
+
     // Gallary
     &.widget_media_gallery {
       & > * {
