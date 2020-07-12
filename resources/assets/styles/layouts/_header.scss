@@ -48,4 +48,26 @@
       @apply bg-indigo-500;
     }
   }
+
+  .sub-menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    display: none;
+  }
+
+  li:hover > ul,
+  li:focus-within > ul,
+  li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+
+  li ul li {
+    clear: both;
+    width: 100%;
+  }
 }
