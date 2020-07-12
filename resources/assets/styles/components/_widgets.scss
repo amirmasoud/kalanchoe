@@ -6,6 +6,16 @@ footer.content-info {
       @apply text-3xl font-serif mb-2;
     }
 
+    // .widget_custom_html,
+    // .widget_text {
+    //   & > * {
+    //     margin-left: 0 !important;
+    //     margin-right: 0 !important;
+    //   }
+    // }
+
+    // Text -> _posts.scss
+
     // RSS
     &.widget_rss {
       .rss-date {

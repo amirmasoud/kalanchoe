@@ -272,7 +272,8 @@ footer.content-info .widget_text,
     }
   }
 
-  & > * {
+  & > *:not(.widget_custom_html),
+  & > *:not(.widget_text) {
     @apply px-4 pb-4 mx-0 leading-8 break-words;
 
     word-break: break-word;
