@@ -11,7 +11,7 @@
     "editor.tabSize": 4,
     "editor.renderLineHighlight": "none",
     "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "Tomorrow Night Blue",
     "phpcs.standard": "WordPress",
     "phpcbf.standard": "WordPress-Core",
     "phpcbf.executablePath": "phpcbf",
