@@ -44,142 +44,6 @@ footer.content-info .widget_text,
     }
   }
 
-  h1 {
-    @apply text-6xl mt-4 mb-8;
-
-    line-height: 4rem;
-  }
-
-  h2 {
-    @apply text-5xl mt-3 mb-6;
-
-    line-height: 3rem;
-  }
-
-  h3 {
-    @apply text-4xl mt-3 mb-5 leading-10;
-  }
-
-  h4 {
-    @apply text-3xl mt-2 mb-4 leading-8;
-  }
-
-  h5 {
-    @apply text-2xl mt-2 mb-3 leading-6;
-  }
-
-  h6 {
-    @apply text-xl my-2 leading-4;
-  }
-
-  cite {
-    @apply font-sans italic font-light;
-  }
-
-  blockquote {
-    @apply font-handwriting text-3xl px-8;
-
-    cite {
-      @apply block my-4 text-base;
-    }
-  }
-
-  dl {
-    dt {
-      @apply font-bold;
-    }
-
-    dd {
-      @apply italic ml-8;
-    }
-  }
-
-  ul {
-    @apply list-disc list-inside pl-8;
-  }
-
-  ol {
-    @apply list-decimal list-inside pl-8;
-  }
-
-  address {
-    @apply italic;
-  }
-
-  abbr,
-  acronym {
-    @apply no-underline border-b border-dashed border-indigo-400;
-  }
-
-  big {
-    font-size: larger;
-  }
-
-  code {
-    @apply font-mono bg-gray-200 rounded p-1;
-  }
-
-  pre {
-    @apply font-mono bg-gray-200 rounded-md p-4 overflow-y-scroll whitespace-pre;
-  }
-
-  del {
-    @apply no-underline bg-red-200 rounded p-1;
-  }
-
-  ins {
-    @apply no-underline bg-green-200 rounded p-1;
-  }
-
-  em {
-    @apply italic;
-  }
-
-  kbd {
-    @apply bg-gray-200 border border-gray-400 text-gray-800 inline-block text-sm font-bold leading-4 whitespace-no-wrap rounded p-1;
-
-    // prettier-ignore
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
-  }
-
-  q {
-    @apply font-handwriting text-2xl;
-  }
-
-  var {
-    @apply font-mono font-bold;
-  }
-
-  table {
-    @apply table-auto my-4 mx-4;
-
-    @screen lg {
-      @apply mx-64;
-    }
-
-    tr {
-      &.odd {
-        @apply bg-gray-100;
-      }
-
-      th {
-        @apply px-4 py-2 whitespace-no-wrap;
-      }
-
-      td {
-        @apply border px-4 py-2 whitespace-no-wrap;
-      }
-
-      td:first-child {
-        @apply pl-4;
-      }
-
-      td:last-child {
-        @apply pr-4;
-      }
-    }
-  }
-
   .attachment img {
     @apply w-full;
   }
@@ -278,9 +142,9 @@ footer.content-info .widget_text,
     word-break: break-word;
     flex-basis: 100%;
 
-    @screen lg {
-      margin: 0 15rem;
-    }
+    // @screen lg {
+    //   margin: 0 15rem;
+    // }
   }
 
   .alignleft,

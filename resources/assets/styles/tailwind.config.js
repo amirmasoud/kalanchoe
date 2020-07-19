@@ -18,7 +18,7 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
   purge: {
     enabled: process.env.NODE_ENV === "production",
     content: ["./views/**/*.blade.php"],

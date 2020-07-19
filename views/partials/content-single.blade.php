@@ -21,7 +21,7 @@
     </div>
   </header>
   @endif
-  <div class="entry-content flex flex-wrap container mx-auto text-lg">
+  <div class="entry-content flex flex-wrap container mx-auto text-lg prose lg:prose-xl">
     @php the_content() @endphp
   </div>
   <footer class="flex flex-wrap max-w-3xl mx-auto">
