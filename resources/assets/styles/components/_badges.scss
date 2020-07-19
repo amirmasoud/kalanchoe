@@ -1,5 +1,5 @@
 .badge {
-  @apply p-1 text-xs font-light rounded;
+  @apply p-1 text-xs font-light rounded no-underline #{!important};
 }
 
 .badge-indigo {

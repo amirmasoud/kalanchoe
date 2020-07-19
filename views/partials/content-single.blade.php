@@ -1,6 +1,6 @@
-<article @php post_class() @endphp>
+<article @php post_class('container px-4 prose') @endphp>
   @if (has_post_thumbnail())
-  <header class="flex flex-wrap container px-4 mx-auto flex-col-reverse md:flex-row justify-between mb-20">
+  <header class="flex flex-wrap mx-auto flex-col-reverse md:flex-row justify-between mb-20">
     <div class="w-full md:w-1/2">
       <div class="w-full mb-4">@include('partials/category-all')</div>
       <h1 class="entry-title text-5xl md:mr-12 break-words">{!! get_the_title() !!}</h1>
@@ -11,7 +11,7 @@
     {!! Post::thumbnail('single-thumbnail') !!}
   </header>
   @else
-  <header class="flex flex-wrap container px-4 mx-auto justify-between mb-20">
+  <header class="flex flex-wrap mx-auto justify-between mb-20">
     <div class="w-full">
       <div class="w-full mb-4">@include('partials/category-all')</div>
       <h1 class="entry-title text-5xl md:mr-12 break-words">{!! get_the_title() !!}</h1>
@@ -21,10 +21,10 @@
     </div>
   </header>
   @endif
-  <div class="entry-content flex flex-wrap container mx-auto text-lg prose lg:prose-xl">
+  <div class="entry-content flex flex-wrap mx-auto">
     @php the_content() @endphp
   </div>
-  <footer class="flex flex-wrap max-w-3xl mx-auto">
+  <footer class="flex flex-wrap mx-auto">
     <div class="flex w-full">
       {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
     </div>

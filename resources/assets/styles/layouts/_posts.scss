@@ -137,9 +137,6 @@ footer.content-info .widget_text,
   }
 
   & > * {
-    @apply px-4 pb-4 mx-0 leading-8 break-words;
-
-    word-break: break-word;
     flex-basis: 100%;
 
     // @screen lg {
