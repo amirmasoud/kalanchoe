@@ -59,9 +59,13 @@
     }
 
     .sub-menu {
-      @apply bg-white pb-2 py-2;
+      @apply bg-white px-2;
 
-      border-radius: 1.25rem;
+      border-bottom: 2px solid;
+      // prettier-ignore
+      border-image: radial-gradient(rgb(0, 143, 104), rgb(250, 224, 66)) 1;
+      // border-image-slice: 1;
+      // box-shadow: 0 0 5px 1px #f7f7f7;
       visibility: hidden;
       opacity: 0;
       position: absolute;

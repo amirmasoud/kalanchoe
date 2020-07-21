@@ -30,3 +30,15 @@ input[type="password"] {
 input[type="submit"] {
   @apply bg-indigo-400 outline-none rounded px-2 text-sm py-1 text-indigo-100 cursor-pointer;
 }
+
+img {
+  @apply transition-all duration-300 ease-linear;
+
+  filter: grayscale(1);
+
+  &:hover {
+    @apply transition-all duration-300 ease-linear;
+
+    filter: grayscale(0);
+  }
+}
