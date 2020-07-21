@@ -9,9 +9,11 @@
 .menu-primary-container {
   @apply px-8 py-4 overflow-x-scroll;
 
-  @screen md {
-    @apply overflow-hidden;
-  }
+  overflow: inherit;
+
+  // @screen md {
+  //   @apply overflow-hidden;
+  // }
 }
 
 #menu-social {
@@ -26,50 +28,58 @@
   }
 }
 
-.nav-primary ul {
-  @apply flex justify-center px-40 py-4;
+.nav-primary {
+  @apply relative;
 
-  @screen md {
-    @apply p-0;
+  & > div {
+    @apply absolute right-0 left-0;
   }
 
-  a {
-    @apply text-gray-800 font-light px-3 py-1 mx-1 rounded-full;
+  ul {
+    @apply flex justify-center px-40 py-4;
 
-    &:hover {
-      @apply bg-gray-300;
+    @screen md {
+      @apply p-0;
     }
-  }
 
-  li.current_page_item a {
-    @apply bg-indigo-500 text-indigo-100 font-light;
-
-    &:hover {
-      @apply bg-indigo-500;
+    li {
+      @apply relative;
     }
-  }
 
-  .sub-menu {
-    @apply bg-white pb-2 py-2;
+    a {
+      @apply text-gray-800 font-light px-3 py-1 mx-1 rounded-full;
 
-    border-radius: 1.25rem;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    transition: all 0.5s ease;
-    display: none;
-  }
+      &:hover {
+        @apply text-gray-900;
+      }
+    }
 
-  li:hover > ul,
-  li:focus-within > ul,
-  li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-  }
+    li.current_page_item a {
+      @apply text-indigo-900;
+    }
 
-  li ul li {
-    clear: both;
-    width: 100%;
+    .sub-menu {
+      @apply bg-white pb-2 py-2;
+
+      border-radius: 1.25rem;
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      transition: all 0.5s ease;
+      display: none;
+    }
+
+    li:hover > ul,
+    li:focus-within > ul,
+    li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+    }
+
+    li ul li {
+      clear: both;
+      width: 100%;
+    }
   }
 }
