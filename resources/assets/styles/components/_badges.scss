@@ -1,12 +1,12 @@
 .badge {
-  @apply p-1 text-xs font-light rounded no-underline #{!important};
+  @apply p-1 text-xs font-light rounded;
 }
 
 .badge-indigo {
-  @apply bg-indigo-200 text-indigo-600;
+  @apply bg-gray-200 text-gray-600 transition-all ease-linear duration-300;
 
   &:hover,
   &:focus {
-    @apply bg-indigo-300;
+    @apply bg-indigo-300 transition-all ease-linear duration-300;
   }
 }
