@@ -14,10 +14,10 @@ p {
 }
 
 a {
-  @apply text-indigo-500 no-underline;
+  @apply text-indigo-500 no-underline transition-all duration-300 ease-linear;
 
   &:hover {
-    @apply border-indigo-900;
+    @apply transition-all duration-300 ease-linear;
   }
 }
 
