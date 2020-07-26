@@ -10,10 +10,6 @@
   @apply px-8 py-4 overflow-x-scroll;
 
   overflow: inherit;
-
-  // @screen md {
-  //   @apply overflow-hidden;
-  // }
 }
 
 #menu-social {
@@ -54,36 +50,26 @@
       }
     }
 
-    li.current_page_item a {
-      @apply text-indigo-900;
+    .sub-menu {
+      @apply bg-gray-800 px-2 py-1 invisible opacity-0 absolute transition-all duration-300 ease-linear hidden rounded-lg shadow;
+
+      a {
+        @apply text-gray-200;
+      }
     }
 
-    .sub-menu {
-      @apply bg-white px-2;
-
-      border-bottom: 2px solid;
-      // prettier-ignore
-      border-image: radial-gradient(rgb(0, 143, 104), rgb(250, 224, 66)) 1;
-      // border-image-slice: 1;
-      // box-shadow: 0 0 5px 1px #f7f7f7;
-      visibility: hidden;
-      opacity: 0;
-      position: absolute;
-      transition: all 0.5s ease;
-      display: none;
+    li.current_page_item a {
+      @apply text-indigo-900;
     }
 
     li:hover > ul,
     li:focus-within > ul,
     li ul:hover {
-      visibility: visible;
-      opacity: 1;
-      display: block;
+      @apply block visible opacity-100 z-10 mt-1;
     }
 
     li ul li {
-      clear: both;
-      width: 100%;
+      @apply clear-both w-full;
     }
   }
 }
