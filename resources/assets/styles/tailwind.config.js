@@ -15,6 +15,15 @@ module.exports = {
         "1/10": "10%",
       },
     },
+    typography: {
+      default: {
+        css: {
+          a: {
+            textDecoration: "none",
+          },
+        },
+      },
+    },
   },
   variants: {},
   plugins: [require("@tailwindcss/typography")],
