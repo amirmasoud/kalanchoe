@@ -16,6 +16,7 @@
       <p class="mb-1">&copy; {{ date('Y') }} All Rights Reserved.</p>
       <p class="mb-1">Proudly powered by <a class="text-gray-600" href="https://wordpress.org/">WordPress</a></p>
       <p class="mb-1">Developed by <a class="text-gray-600" href="https://amirmasoud.me/">Amirmasoud Sheydaei</a></p>
+      <p class="mb-1">version <a class="text-gray-600" href="http://github.com/amirmasoud/kalanchoe">1.0.0</a></p>
     </div>
   </div>
 </footer>
