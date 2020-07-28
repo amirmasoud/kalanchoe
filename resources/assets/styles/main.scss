@@ -11,9 +11,6 @@
  */
 @tailwind base;
 
-/** Import variables */
-@import "common/variables";
-
 /** Import everything from autoload */
 @import "./autoload/**/*";
 

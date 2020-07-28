@@ -42,3 +42,7 @@ img {
     filter: grayscale(0);
   }
 }
+
+.w-\(full-4\) {
+  width: calc(100% - 1rem);
+}
