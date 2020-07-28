@@ -10,7 +10,7 @@ class Category extends Controller
      * Return first category Array[link, text] of the given post in the loop,
      * otherwise false.
      *
-     * @return Array|Boolean
+     * @return array|boolean
      */
     public static function first()
     {
