@@ -1,6 +1,6 @@
 # Changelog
 
-## v1.0.2: Jul 28, 2020
+## v1.0.2: Aug 2, 2020
 
 * Refactored project
 * Added screenshot
