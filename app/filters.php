@@ -90,20 +90,9 @@ add_filter('comments_template', function ($comments_template) {
     return $comments_template;
 }, 100);
 
-// add_filter('get_search_form', function () {
-//     $form = '';
-//     echo template(realpath(config('dir.template') . '/templates/partials/searchform.blade.php'), []);
-//     return $form;
-// });
-
-// apply_filters('wp_nav_menu_items', function ($items, $args) {
-//     if ($args->theme_location == 'social_navigation') {
-//         var_dump($items);
-//     }
-// }, 10, 2);
-
-
-
+/**
+ * Render social navigation menu
+ */
 add_filter('wp_nav_menu_items', function ($items, $args) {
     if ($args->theme_location == 'social_navigation') {
         preg_match_all('/(.*?)<a href="(.*?)">(.*?)<\/a>(.*?)/s', $items, $items_preg);
