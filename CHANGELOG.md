@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.2: Jul 28, 2020
+
+* Refactored project
+* Added screenshot
+
 ## v1.0.1: Jul 26, 2020
 
 * Added Tailwind typography

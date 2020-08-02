@@ -7,7 +7,7 @@
     @apply w-full mb-4 object-cover rounded shadow-md;
 
     &.home-thumbnail {
-      @apply h-40;
+      height: 24rem;
 
       &:hover {
         @apply shadow-lg;

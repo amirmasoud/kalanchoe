@@ -6,6 +6,11 @@ use Sober\Controller\Controller;
 
 class User extends Controller
 {
+    /**
+     * Get user's avatar
+     *
+     * @return string
+     */
     public static function avatar()
     {
         return get_avatar(

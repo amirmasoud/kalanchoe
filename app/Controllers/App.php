@@ -6,11 +6,21 @@ use Sober\Controller\Controller;
 
 class App extends Controller
 {
+    /**
+     * Get site name.
+     *
+     * @return string
+     */
     public function siteName()
     {
         return get_bloginfo('name');
     }
 
+    /**
+     * Get current page title.
+     *
+     * @return string
+     */
     public static function title()
     {
         if (is_home()) {
@@ -27,6 +37,5 @@ class App extends Controller
         if (is_404()) {
             return __('Not Found', 'sage');
         }
-        // return get_the_title();
     }
 }

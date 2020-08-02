@@ -9,10 +9,8 @@ class Post extends Controller
     /**
      * Get post thumbnail.
      *
-     * @param string|integer $width
-     * @param string|integer $height
      * @param string $class
-     * @return void
+     * @return string
      */
     public static function thumbnail($class)
     {
