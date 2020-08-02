@@ -1,1 +1,1 @@
-![screenshot](screenshot.png?raw=true "Screenshot")
+![screenshot](screenshot_full.png?raw=true "Screenshot")
